@@ -10,4 +10,4 @@ listing:
 ::: {#buttons}
 :::
 
-Insert text about the class here.
+This is the course website for STAT 215a in Fall 2024.
