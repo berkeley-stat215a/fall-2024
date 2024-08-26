@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -146,18 +146,8 @@ gtag('config', 'G-V7W9E304TX', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-stat-215a" id="toc-about-stat-215a" class="nav-link active" data-scroll-target="#about-stat-215a">About Stat 215a</a>
-  <ul class="collapse">
-  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -181,32 +171,104 @@ gtag('config', 'G-V7W9E304TX', { 'anonymize_ip': true});
 </header>
 
 
-<p>Jump to:</p>
+<div class="center">
+<p><strong>Statistics 215A, Fall 2024</strong></p>
+</div>
+<p><strong>Instructor:</strong> Professor Bin Yu, binyu at berkeley.edu<br>
+<strong>Lectures:</strong> T/Th: 12:30 pm - 2:00 pm (332 Evans)<br>
+<strong>Office hours:</strong> TBA</p>
+<p><strong>Discussion:</strong> Friday: 9:00 am - 11:00 am (342 Evans)<br>
+<strong>GSI and office hours:</strong> Anthony Ozerov (ozerov at berkeley.edu ); Office Hours TBA. GSI will be in charge of the discussion sessions, Ed Discussions (replacing piazza), and the labs/homework.<br>
+<strong>Text books:</strong></p>
 <ul>
-<li><a href="#about">About Stat 215a</a>
+<li><p>“Veridical data science: the practice of responsible data analysis and decision-making” by Bin Yu and Rebecca Barter (free version at vdsbook.com; print version to be published in Oct.&nbsp;2024 by MIT Press) (required).</p></li>
+<li><p>Statistical models, David Freedman (Cambridge Press, 2009, 2nd Ed.) (required).</p></li>
+<li><p>The elements of statistical learning, Trevor Hastie, Rob Tibshirani, Jerome Friedman (Springer, 2016, 2nd Ed.) (recommended).</p></li>
+</ul>
+<p><strong>Comments, Suggestions, Gripes:</strong> Before or after the lectures, email, or talk to the instructor and the GSI.<br>
+<strong>Ed Discussion:</strong> Questions and discussion about course material, HWs, and labs can be posted on the Ed Discussion page (accessed on bCourses). The GSI will regularly monitor this to ensure all questions are answered in a timely manner, but students are encouraged to help their classmates as well. Please think carefully before asking questions specifically about the projects. For example, questions concerning how to do something specific in R are fine, but questions asking what other people did for their analysis are not. Questions asking about clarifications are fine.<br>
+<strong>Slack:</strong> Given the online nature of this semester’s class, we created a Slack workspace that students can use to connect with one another and to post live questions/comments during lectures. (you will be added using your berkeley.edu email).<br>
+<strong>bCourses:</strong> <a href="https://bcourses.berkeley.edu/courses/1537926" class="uri">https://bcourses.berkeley.edu/courses/1537926</a><br>
+<strong>Course website:</strong> <a href="https://stat215a.berkeley.edu/fall-2024/" class="uri">https://stat215a.berkeley.edu/fall-2024/</a> (with up-to-date schedule)<br>
+<strong>Grading:</strong></p>
 <ul>
-<li><a href="#goals">Goals</a></li>
-<li><a href="#prerequisites">Prerequisites</a></li>
+<li><p>55% assignments (homework and labs)</p></li>
+<li><p>5% class/discussion participation and reading assignments</p></li>
+<li><p>15% midterm</p></li>
+<li><p>25% final project</p></li>
+</ul>
+<p><strong>Assignments:</strong> There will be 4 or 5 assignments given out on Friday in the discussion session and usually due in two weeks (there will be an announcement if otherwise). <strong>The assignments require two full weeks of work to satisfactorily complete, which requires a very early start.</strong> The assignments contain homework problems and data analysis labs. For the data labs, each student will produce a 12-page (maximum) report presenting a narrative that connects the motivating questions, the analysis conducted and the conclusions drawn. The labs will be completed in Python (optionally also R, especially for visualization). The reports will be made using LaTeXand the final pdf output should not contain any code whatsoever. Each report will be hosted in a Github repository containing both the code and the written report, and an automated script will pull the submissions at 12:00am on the due date (i.e., midnight of the night before our Friday discussion section). HW submissions will be made to Gradescope. <strong>No late assignments</strong> will be accepted, <em>for any reason.</em><br>
+<strong>Readings:</strong> There will be a number of readings assigned throughout the semester. The assigned readings for each week and links to the papers can be found in the calendar on the course website. Students should read at least one paper or reading carefully and go through other readings (as time allows) each week and be prepared to discuss their takeaways during the lecture and lab.<br>
+<strong>Gradescope:</strong> <a href="https://www.gradescope.com/courses/833104" class="uri">https://www.gradescope.com/courses/833104</a> (by invite)<br>
+<strong>Course description:</strong><br>
+<strong>Overview</strong></p>
+<p>Information technology advances have made it possible to collect huge amounts of data in every walk of our life and beyond. These vast amounts of data have enabled scientists, social scientists, government agencies, and companies to ask increasingly complex questions aimed at understanding the physical and human world, informing pubic policies, and improving productivity.</p>
+<p>However, having data alone is not enough. To be able to solve a domain problem or answer a domain question, it takes a principled statistics and machine learning investigation process in the context of and in combination with domain knowledge. This process includes problem formulation in context and with a domain goal outside statistics, data collection (ideally through careful experimental design), data cleaning, data visualization, algorithm/model development, validation, post-hoc analysis, and drawing conclusions in context. It rests on adequate domain knowledge, suitable computing platforms, appropriate choices of data cleaning schemes and scalable algorithms/models, and careful consideration of domain knowledge and information from the data to draw meaningful conclusions about a domain problem. That is, with both computation and narratives (domain knowledge) forming its foundation, the statistical and machine learning investigation process is one of rigorous evidence-seeking to make trustworthy data-driven conclusions that are useful for the domain problem and accessible by the domain experts.</p>
+<p>The most impactful contributions are often made when domain experts (scientists, for example) and statisticians and machine learners work together to brainstorm and ask questions. These domain experts are not only key to formalizing the ideas, but they also are integral in generating the data. Engaging with the individuals who collected the data in the first place allows the statistician and machine learner to learn about the context in which the data lives, and subsequently, to conduct an effective analysis capable of answering the question being asked.<br>
+<strong>Collaborative learning in context</strong></p>
+<p>This course will demonstrate what it is like to be an applied statistician, or data scientist in today’s data-rich world. We emphasize the goal of answering questions outside of statistics or machine learning using data and domain knowledge through working with domain experts. We illustrate through lectures, class discussions, data labs, and homework assignments, the many steps involved in the iterative process of information extraction and evidence gathering of a statistical investigation. Specifically, students will learn together and critically understand the technical topics of EDA (exploratory data analysis), prediction algorithms (e.g.&nbsp;Least Squares, random forests), identification of sources of randomness in data, probabilistic models (e.g.&nbsp;linear regression), inference, and interpretation. We ground our class on. the concepts of reality, representation of reality, and mental construct to separate current data, algorithms/models and future data in the context of domain knowledge. We discuss when and how to connect these three concepts in the entire process of data analysis. In particular, the PCS framework (workflow and documentation) based on the three principles of data science - predictability, stability and computability (PCS) will be employed as an overarching theme.</p>
+<p>The lectures (and labs) will be based on real-data problems, and students will learn useful statistical concepts and methods in the contexts of these problems. The aim is to illustrate how judgement and common-sense are crucial to the statistical investigation process. Moreover, we introduce the technical topics through a first-principles approach so that students gain the skills necessary to develop new techniques to solve problems in unfamiliar situations in the future.</p>
+<p>The essential elements of applied statistics are captured in Bin’s piece entitled “Data Wisdom” (<a href="http://www.odbms.org/2015/04/data-wisdom-for-data-science/" class="uri">http://www.odbms.org/2015/04/data-wisdom-for-data-science/</a>). Students are asked to read the piece after the first lecture.<br>
+<strong>Data lab format and peer-grading</strong> The data labs will be done individually, except for one group lab later in the semester. The goal of writing the lab report is not only to gain data analysis experience but is also an exercise in communication. We ask that particular attention is given to the writing of the report, as your peers will be reading them: so that the students can learn from one another, the labs will be peer-reviewed. Each student will review 2-3 labs from their peers, and will provide feedback and a grade based on several criteria including clarity of writing, validity of analysis and informativeness of visualizations. The final grade of each lab will be decided by the GSI who will use the student grades as a guide.<br>
+<strong>Full commitment to the class is necessary</strong> Please be aware that this is a heavy-load class. If you are not sure that you can commit, please audit the class instead since there are many students on the waitlist. Further, because class discussions are an integral part of the course, registered students are required to attend all classes unless permitted by the instructor under justifiable circumstances.<br>
+<strong>Pre-requisites</strong> In this class, we require knowledge of upper division mathematical statistics and probability courses (Stat 134 and 135) at UC Berkeley. In terms of computing, at a minimum you should be comfortable manipulating files in Unix and writing your own functions, manipulating and cleaning data and creating and customizing graphics in Python. Ideally, students will already have a basic fluency in Python as well as confidence using Github. While we will be providing a short introduction to these topics in the labs, students who are entirely unfamiliar with these tools will need to put in additional work to ensure that they meet the standards expected of the course.<br>
+<strong>Tentative list of topics:</strong></p>
+<ul>
+<li><p>Getting to know each other. Overview of the course. PCS (workflow and documentation) as the guiding framework for the course, where PCS stands for predictability, computability and stability. (Aug.</p>
+<ol start="29" type="1">
+<li></li>
+</ol>
+<ul>
+<li>Aug.&nbsp;30: Lab 0 assigned</li>
 </ul></li>
-</ul>
-<section id="about-stat-215a" class="level2">
-<h2 class="anchored" data-anchor-id="about-stat-215a">About Stat 215a</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.</p>
-<section id="goals" class="level3">
-<h3 class="anchored" data-anchor-id="goals">Goals</h3>
+<li><p>PCS: reality check and stability through appropriate data and algorithm perturbations. Domain question to answer (often about the future), Relevant data collection and cleaning, EDA. (Sept.&nbsp;3, 5)</p>
 <ul>
-<li>Goal 1</li>
-<li>Goal 2</li>
-<li>Goal 3</li>
+<li>Sept.&nbsp;6: Lab 0 due (midnight); Lab 1 assigned (on ER PECARN data cleaning)</li>
+</ul></li>
+<li><p>Video Guest Lecture by Aaron Kornblith (UCSF) on data collection case study 1 (pediatric ER); The ER PECARN data problem will be investigated throughout the semester in the labs. Unsupervised learning (clustering): reality-check and stability consideration through appropriate data and algorithm perturbations. (Sept.&nbsp;10, 12)</p></li>
+<li><p>Unsupervised learning (PCA, NMF, and audo-encoder) and prediction problems: reality-check and stability consideration through appropriate data and algorithm perturbations. (Sept.&nbsp;17, 19)</p></li>
+<li><p>Least Squares (LS). 3-way data split: test set as best proxy for future data. Cross validation. Regularized LS: model selection, forward selection, L2boosting, (Sept.&nbsp;24 (zoom lecture by Bin), 26 (video lecture by Stark on data collection regarding election auditing))</p>
+<ul>
+<li>Sept.&nbsp;27: Lab 1 due (midnight); Lab 1 peer review assigned; Lab 2 assigned (on clustering linguistic data)</li>
+</ul></li>
+<li><p>Lasso and Ridge. (Oct.&nbsp;1, 3)</p>
+<ul>
+<li>Oct.&nbsp;4: Lab 1 peer review due (midnight)</li>
+</ul></li>
+<li><p>Weighted LS. Binary classification through WLS and logistic algorithm. Prediction with uncertainty measures. Calibration and evaluation or scrutiny of results. Sources of randomness. Simple random sampling. Density estimation and generative DL (Oct.&nbsp;8, 10)</p>
+<ul>
+<li>Oct.&nbsp;11: Lab 2 due (midnight); Lab 2 peer review assigned; Lab 3 assigned (computing and evaluating the stability of k-means)</li>
+</ul></li>
+<li><p>EM, Neyman-Rubin model for A/B testing, and linear regression models (Oct.&nbsp;15, 17)</p>
+<ul>
+<li>Oct.&nbsp;18: Lab 2 peer review due (midnight)</li>
+</ul></li>
+<li><p>Logistic Regression Model and review. (Oct.&nbsp;22)</p></li>
+<li><p><strong>Midterm</strong> Oct.&nbsp;24 (in class) (Bin will be on travel)</p>
+<ul>
+<li>Oct.&nbsp;25: Lab 3 due (midnight); Lab 3 peer review assigned; Lab 4 assigned (group project)</li>
+</ul></li>
+<li><p>Exponential family. GLMS, IRWLS, model checking through calibration.(Oct.&nbsp;29, Oct.&nbsp;31)</p>
+<ul>
+<li>Nov.&nbsp;1: Lab 3 peer review due (midnight)</li>
+</ul></li>
+<li><p>Drawing conclusions from linear regression and logistic regression models through data and algorithm perturbations (or PCS inference). Interpretation of data results. Hypothesis testing, sequential testing, and multiple hypothesis testing. (Nov.&nbsp;5, 7).</p>
+<ul>
+<li>Nov.&nbsp;15: Lab 4 Due (midnight); Lab 4 peer review assigned; <strong>Final project assigned</strong></li>
+</ul></li>
+<li><p>Supervised DL and other advanced topics (RF, Kernel methods)(Nov. 19, 21)</p>
+<ul>
+<li>Nov.&nbsp;22: Lab 4 peer review due (midnight)</li>
+</ul></li>
+<li><p>Advanced topics: Kernel methods (Nov.&nbsp;22, lecture + lab)</p></li>
+<li><p>Advanced topics: iterative random forests, kernel ridge regression, SVMs, adaboost, interpretable ML,</p></li>
+<li><p>PCS revisited (Nov.&nbsp;26)</p></li>
+<li><p>Last Lecture (Guest Lecture) Dec.&nbsp;3 Tuesday; No lecture on Thursday. Dec.&nbsp;6 Friday Last lab session</p></li>
+<li><p>No in-class final exam, but there is a final project.</p></li>
 </ul>
-</section>
-<section id="prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.</p>
+<p><strong>Final Project Due</strong>: Dec.&nbsp;13 (midnight).</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
