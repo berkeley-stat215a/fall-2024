@@ -60,14 +60,14 @@ The assignments contain homework problems and data analysis labs. For
 the data labs, each student will produce a 12-page (maximum) report
 presenting a narrative that connects the motivating questions, the
 analysis conducted and the conclusions drawn. The labs will be completed
-in Python (optionally also R, especially for visualization). The reports
-will be made using LaTeXand the final pdf output should not contain any
-code whatsoever. Each report will be hosted in a Github repository
-containing both the code and the written report, and an automated script
-will pull the submissions at 12:00am on the due date (i.e., midnight of
-the night before our Friday discussion section). HW submissions will be
-made to Gradescope. **No late assignments** will be accepted, *for any
-reason.*\
+in Python (optionally some parts in R, especially for visualization).
+The reports will be made using Jupyter Notebooks or pure LaTeX and the
+final pdf output should not contain any code whatsoever. Each report
+will be hosted in a Github repository containing both the code and the
+written report, and an automated script will pull the submissions at
+12:00am on the due date (i.e., midnight of the night before our Friday
+discussion section). HW submissions will be made to Gradescope. **No
+late assignments** will be accepted, *for any reason.*\
 **Readings:** There will be a number of readings assigned throughout the
 semester. The assigned readings for each week and links to the papers
 can be found in the calendar on the course website. Students should read
@@ -75,7 +75,8 @@ at least one paper or reading carefully and go through other readings
 (as time allows) each week and be prepared to discuss their takeaways
 during the lecture and lab.\
 **Gradescope:** <https://www.gradescope.com/courses/833104> (by invite)\
-**Course description:**\
+**Course description:**
+
 **Overview**
 
 Information technology advances have made it possible to collect huge
@@ -112,27 +113,26 @@ data in the first place allows the statistician and machine learner to
 learn about the context in which the data lives, and subsequently, to
 conduct an effective analysis capable of answering the question being
 asked.\
-**Collaborative learning in context**
-
-This course will demonstrate what it is like to be an applied
-statistician, or data scientist in today's data-rich world. We emphasize
-the goal of answering questions outside of statistics or machine
-learning using data and domain knowledge through working with domain
-experts. We illustrate through lectures, class discussions, data labs,
-and homework assignments, the many steps involved in the iterative
-process of information extraction and evidence gathering of a
-statistical investigation. Specifically, students will learn together
-and critically understand the technical topics of EDA (exploratory data
-analysis), prediction algorithms (e.g. Least Squares, random forests),
-identification of sources of randomness in data, probabilistic models
-(e.g. linear regression), inference, and interpretation. We ground our
-class on. the concepts of reality, representation of reality, and mental
-construct to separate current data, algorithms/models and future data in
-the context of domain knowledge. We discuss when and how to connect
-these three concepts in the entire process of data analysis. In
-particular, the PCS framework (workflow and documentation) based on the
-three principles of data science - predictability, stability and
-computability (PCS) will be employed as an overarching theme.
+**Collaborative learning in context** This course will demonstrate what
+it is like to be an applied statistician, or data scientist in today's
+data-rich world. We emphasize the goal of answering questions outside of
+statistics or machine learning using data and domain knowledge through
+working with domain experts. We illustrate through lectures, class
+discussions, data labs, and homework assignments, the many steps
+involved in the iterative process of information extraction and evidence
+gathering of a statistical investigation. Specifically, students will
+learn together and critically understand the technical topics of EDA
+(exploratory data analysis), prediction algorithms (e.g. Least Squares,
+random forests), identification of sources of randomness in data,
+probabilistic models (e.g. linear regression), inference, and
+interpretation. We ground our class on. the concepts of reality,
+representation of reality, and mental construct to separate current
+data, algorithms/models and future data in the context of domain
+knowledge. We discuss when and how to connect these three concepts in
+the entire process of data analysis. In particular, the PCS framework
+(workflow and documentation) based on the three principles of data
+science - predictability, stability and computability (PCS) will be
+employed as an overarching theme.
 
 The lectures (and labs) will be based on real-data problems, and
 students will learn useful statistical concepts and methods in the
@@ -199,43 +199,43 @@ the standards expected of the course.\
     problems: reality-check and stability consideration through
     appropriate data and algorithm perturbations. (Sept. 17, 19)
 
+    -   Sept. 20: Lab 1 due (midnight); Lab 1 peer review assigned; Lab
+        2 assigned (on clustering linguistic data)
+
 -   Least Squares (LS). 3-way data split: test set as best proxy for
     future data. Cross validation. Regularized LS: model selection,
     forward selection, L2boosting, (Sept. 24 (zoom lecture by Bin), 26
     (video lecture by Stark on data collection regarding election
     auditing))
 
-    -   Sept. 27: Lab 1 due (midnight); Lab 1 peer review assigned; Lab
-        2 assigned (on clustering linguistic data)
+    -   Sept. 27: Lab 1 peer review due (midnight)
 
 -   Lasso and Ridge. (Oct. 1, 3)
 
-    -   Oct. 4: Lab 1 peer review due (midnight)
+    -   Oct. 4: Lab 2 due (midnight); Lab 2 peer review assigned; Lab 3
+        assigned (computing and evaluating the stability of k-means)
 
 -   Weighted LS. Binary classification through WLS and logistic
     algorithm. Prediction with uncertainty measures. Calibration and
     evaluation or scrutiny of results. Sources of randomness. Simple
     random sampling. Density estimation and generative DL (Oct. 8, 10)
 
-    -   Oct. 11: Lab 2 due (midnight); Lab 2 peer review assigned; Lab 3
-        assigned (computing and evaluating the stability of k-means)
+    -   Oct. 11: Lab 2 peer review due (midnight)
 
 -   EM, Neyman-Rubin model for A/B testing, and linear regression models
     (Oct. 15, 17)
 
-    -   Oct. 18: Lab 2 peer review due (midnight)
+    -   Oct. 18: Lab 3 due (midnight); Lab 3 peer review assigned;
 
 -   Logistic Regression Model and review. (Oct. 22)
 
 -   **Midterm** Oct. 24 (in class) (Bin will be on travel)
 
-    -   Oct. 25: Lab 3 due (midnight); Lab 3 peer review assigned; Lab 4
-        assigned (group project)
+    -   Oct. 25: Lab 3 peer review due (midnight); Lab 4 assigned (group
+        project)
 
 -   Exponential family. GLMS, IRWLS, model checking through
     calibration.(Oct. 29, Oct. 31)
-
-    -   Nov. 1: Lab 3 peer review due (midnight)
 
 -   Drawing conclusions from linear regression and logistic regression
     models through data and algorithm perturbations (or PCS inference).
@@ -246,14 +246,14 @@ the standards expected of the course.\
         **Final project assigned**
 
 -   Supervised DL and other advanced topics (RF, Kernel methods)(Nov.
-    19, 21)
+    12, 24)
+
+-   AIC/BIC, e-L2boosting, Lasso theory; tree-based methods (Nov. 19,
+    21)
 
     -   Nov. 22: Lab 4 peer review due (midnight)
 
--   Advanced topics: Kernel methods (Nov. 22, lecture + lab)
-
--   Advanced topics: iterative random forests, kernel ridge regression,
-    SVMs, adaboost, interpretable ML,
+-   Interpretable ML; Kernel methods (Nov. 22, lecture + lab)
 
 -   PCS revisited (Nov. 26)
 
