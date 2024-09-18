@@ -7,12 +7,12 @@ title: "Syllabus"
 **Statistics 215A, Fall 2024**
 :::
 
-**Instructor:** Professor Bin Yu, binyu@berkeley.edu\
+**Instructor:** Professor Bin Yu, binyu at berkeley.edu\
 **Lectures:** T/Th: 12:30 pm - 2:00 pm (332 Evans)\
 **Office hours:** 409 Evans: Tuesday 10:00-11:00, Wed 11:00-12:00.
 
 **Discussion:** Friday: 9:00 am - 11:00 am (342 Evans)\
-**GSI:** Anthony Ozerov (ozerov@berkeley.edu ); GSI will be in charge of
+**GSI:** Anthony Ozerov (ozerov at berkeley.edu ); GSI will be in charge of
 the discussion sessions, Ed Discussions (replacing piazza), and the
 labs/homework.\
 **GSI Office hours:** Evans 444: Monday 14:00-15:00, Wednesday
