@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://berkeley-stat215a.github.io/fall-2024/index.html</loc>
-    <lastmod>2024-08-28T00:50:41.075Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-stat215a.github.io/fall-2024/license.html</loc>
-    <lastmod>2024-08-28T00:50:41.075Z</lastmod>
-  </url>
-  <url>
     <loc>https://berkeley-stat215a.github.io/fall-2024/syllabus.html</loc>
-    <lastmod>2024-08-28T00:50:41.075Z</lastmod>
+    <lastmod>2024-09-18T22:50:40.981Z</lastmod>
   </url>
   <url>
     <loc>https://berkeley-stat215a.github.io/fall-2024/staff.html</loc>
-    <lastmod>2024-08-28T00:50:41.075Z</lastmod>
+    <lastmod>2024-09-18T22:50:40.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-stat215a.github.io/fall-2024/index.html</loc>
+    <lastmod>2024-09-18T22:50:40.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-stat215a.github.io/fall-2024/license.html</loc>
+    <lastmod>2024-09-18T22:50:40.981Z</lastmod>
   </url>
 </urlset>
